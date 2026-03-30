@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({carts  , setCarts}) => {
+const Navbar = ({carts  , setCarts, total ,  setTotal}) => {
   return (
     <div  className="container mx-auto">
       <div className="  shadow-sm flex justify-between items-center">
@@ -48,7 +48,7 @@ const Navbar = ({carts  , setCarts}) => {
             >
               <div className="card-body">
                 <span className="text-lg font-bold">{carts.length} Items</span>
-                <span className="text-info">Subtotal: $999</span>
+                <span className="text-info">Subtotal: ${total}</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
                     View cart

@@ -14,11 +14,13 @@ function App() {
   
   const cardPromise = fetchCard();
   const [carts  ,setCarts] = useState([]);
-
+  const [total , setTotal]  =  useState(0)
   return (
     <>
       <Navbar carts= {carts}
         setCarts = {setCarts}
+         total =  {total}
+        setTotal  =   {setTotal}
       ></Navbar>
       <Banner></Banner>
       <Stat></Stat>
@@ -26,10 +28,12 @@ function App() {
         <Msec cardPromise = {cardPromise}
         carts  = {carts}
         setCarts  = {setCarts}
-        
+        total =  {total}
+        setTotal  =   {setTotal}
         
         ></Msec>
       </Suspense>
+      <ToastContainer></ToastContainer>
         
     </>
   )

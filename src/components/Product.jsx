@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import Feature from './Feature';
+import { toast } from 'react-toastify';
 
-const Product = ({product , carts  , setCarts}) => {
+const Product = ({product , carts  , setCarts  ,total   , setTotal}) => {
     const addcart  = (product)  => {
         if (carts.find(item => item.id === product.id)) return;
         const newAr =  [...carts  , product];
+        let p = total + product.price;
+        
+        setTotal(p);
         setCarts(newAr);
+        toast("Added  to cart Succesfully")
 
     }
     const [btnCl , setBtnCl] = useState(true);

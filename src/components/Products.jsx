@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 
-const Products = ({data , carts  ,   setCarts}) => {
+const Products = ({data , carts  ,   setCarts  , total , setTotal}) => {
 
   return (
     <div  className="container mx-auto grid  grid-cols-3 gap-[100px]">
@@ -9,6 +9,8 @@ const Products = ({data , carts  ,   setCarts}) => {
             data.map(product =>  <Product product={product}
             carts  = {carts}
             setCarts  =  {setCarts}
+            total =  {total}
+            setTotal  =  {setTotal}
             ></Product>)
         }
         

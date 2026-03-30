@@ -1,8 +1,13 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const Cart = ({ cart   , setCarts }) => {
+const Cart = ({ cart   , carts,   setCarts  ,  total ,setTotal }) => {
     const  removeCart  =   (cart)  =>  {
-        
+        let  p  =  total - cart.price;
+        setTotal(p);
+       const  newAr  = carts.filter(items => items.id !== cart.id)
+       toast("Removed from  Cart")
+       setCarts(newAr);
     }
   return (
     <div className="my-5">
@@ -18,6 +23,7 @@ const Cart = ({ cart   , setCarts }) => {
         </div>
         <button onClick={() => removeCart(cart)} className="btn  text-red-500 text-right  p-4">remove</button>
       </div>
+      
     </div>
   );
 };

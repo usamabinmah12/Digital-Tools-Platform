@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Products from './Products';
 import Carts from './Carts';
 
-const Msec = ({cardPromise, carts , setCarts}) => {
+const Msec = ({cardPromise, carts , setCarts   , total  , setTotal}) => {
     const data = use(cardPromise);
     
     const  [colorEf , setColorEf]  =  useState("products")
@@ -23,9 +23,13 @@ const Msec = ({cardPromise, carts , setCarts}) => {
                     colorEf === "products"  ?  <Products data={data}   
                         carts  = {carts}
                         setCarts  =  {setCarts}
+                        total =  {total}
+                        setTotal  =  {setTotal}
                     ></Products> : <Carts  
                         carts  = {carts}
                         setCarts  =  {setCarts}
+                        total =  {total}
+                        setTotal  =  {setTotal}
                     ></Carts>
              }
         </div>
