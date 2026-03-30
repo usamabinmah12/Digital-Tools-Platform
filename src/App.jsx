@@ -2,7 +2,7 @@ import { ToastContainer } from 'react-toastify'
 import './App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
-// import Stat from './components/Stat'
+ import Stat from './components/Stat'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      {/* <Stat></Stat>  */}
+      <Stat></Stat>  
     </>
   )
 }
