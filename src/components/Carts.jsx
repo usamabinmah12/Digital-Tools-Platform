@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Carts = () => {
+const Carts = ({carts    , setCarts}) => {
+    
     return (
         <div>
-            came  to   carts
+            Length of  cart   is :  {carts.length}
         </div>
     );
 };

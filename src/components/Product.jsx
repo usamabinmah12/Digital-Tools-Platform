@@ -1,7 +1,12 @@
 import React from 'react';
 import Feature from './Feature';
 
-const Product = ({product}) => {
+const Product = ({product , carts  , setCarts}) => {
+    const addcart  = (product)  => {
+        const newAr =  [...carts  , product];
+        setCarts(newAr);
+
+    }
     return (
         <div className=''>
             <div className="card w-96 bg-base-100 shadow-sm">
@@ -16,7 +21,7 @@ const Product = ({product}) => {
             product.features.map(feature => <Feature feature={feature}></Feature>)
         }
           <div className="mt-6">
-            <button className="btn btn-primary btn-block">Buy Now</button>
+            <button onClick={()  => addcart(product)}  className="btn btn-primary btn-block">Buy Now</button>
           </div>
         </div>
       </div>

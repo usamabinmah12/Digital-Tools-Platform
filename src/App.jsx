@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
  import Stat from './components/Stat'
 import Msec from './components/Msec'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 const fetchCard = async() => {
   const res = await fetch("/data.json");
   return  res.json();
@@ -13,15 +13,22 @@ const fetchCard = async() => {
 function App() {
   
   const cardPromise = fetchCard();
-  console.log(cardPromise);
+  const [carts  ,setCarts] = useState([]);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts= {carts}
+        setCarts = {setCarts}
+      ></Navbar>
       <Banner></Banner>
       <Stat></Stat>
       <Suspense fallback={<span class="$$loading $$loading-spinner text-error"></span>}>
-        <Msec cardPromise = {cardPromise}></Msec>
+        <Msec cardPromise = {cardPromise}
+        carts  = {carts}
+        setCarts  = {setCarts}
+        
+        
+        ></Msec>
       </Suspense>
         
     </>

@@ -1,12 +1,15 @@
 import React from "react";
 import Product from "./Product";
 
-const Products = ({data}) => {
+const Products = ({data , carts  ,   setCarts}) => {
 
   return (
-    <div  className="grid  grid-cols-3">
+    <div  className="container mx-auto grid  grid-cols-3 gap-[100px]">
         {
-            data.map(product =>  <Product product={product}></Product>)
+            data.map(product =>  <Product product={product}
+            carts  = {carts}
+            setCarts  =  {setCarts}
+            ></Product>)
         }
         
     </div>
