@@ -1,93 +1,98 @@
 [
   {
     "id": 1,
-    "name": "Basic Plan",
-    "description": "Perfect for beginners starting their journey.",
-    "price": 10,
-    "period": "monthly",
-    "tag": "new",
-    "tagType": "new",
-    "features": [
-      "Access to basic features",
-      "Email support",
-      "Limited usage"
-    ],
-    "icon": "FaUser"
-  },
-  {
-    "id": 2,
-    "name": "Standard Plan",
-    "description": "Great for regular users who need more features.",
-    "price": 20,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes using AI-powered suggestions.",
+    "price": 15,
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
     "features": [
-      "All basic features",
-      "Priority email support",
-      "Increased usage limits"
+      "100+ templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Export to PDF"
     ],
-    "icon": "FaLayerGroup"
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": 2,
+    "name": "Design Toolkit",
+    "description": "Access premium design assets and tools for creatives.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Unlimited templates",
+      "Stock images & icons",
+      "Custom branding tools",
+      "Drag & drop editor"
+    ],
+    "icon": "FaPaintBrush"
   },
   {
     "id": 3,
-    "name": "Pro Plan",
-    "description": "Best for professionals who need advanced tools.",
-    "price": 35,
+    "name": "SEO Optimizer",
+    "description": "Improve your website ranking with advanced SEO tools.",
+    "price": 30,
     "period": "monthly",
     "tag": "best seller",
     "tagType": "best-seller",
     "features": [
-      "100+ templates",
-      "ATS optimization",
-      "Export to PDF",
-      "Priority support"
+      "Keyword analysis",
+      "Site audit reports",
+      "Backlink tracking",
+      "Competitor insights"
     ],
-    "icon": "FaStar"
+    "icon": "FaSearch"
   },
   {
     "id": 4,
-    "name": "Business Plan",
-    "description": "Designed for small teams and startups.",
-    "price": 60,
-    "period": "yearly",
+    "name": "Social Media Manager",
+    "description": "Manage and schedule posts across all platforms easily.",
+    "price": 40,
+    "period": "monthly",
     "tag": "recommended",
     "tagType": "recommended",
     "features": [
-      "Team collaboration",
-      "Shared workspace",
-      "Advanced analytics"
+      "Post scheduling",
+      "Analytics dashboard",
+      "Multi-platform support",
+      "Content calendar"
     ],
-    "icon": "FaBriefcase"
+    "icon": "FaShareAlt"
   },
   {
     "id": 5,
-    "name": "Enterprise Plan",
-    "description": "Ideal for large organizations with full features.",
-    "price": 120,
+    "name": "Cloud Storage Pro",
+    "description": "Secure and scalable cloud storage for your files.",
+    "price": 80,
     "period": "yearly",
     "tag": "premium",
     "tagType": "premium",
     "features": [
-      "Unlimited access",
-      "Dedicated support",
-      "Custom integrations"
+      "1TB storage",
+      "End-to-end encryption",
+      "File sharing",
+      "Backup & restore"
     ],
-    "icon": "FaBuilding"
+    "icon": "FaCloud"
   },
   {
     "id": 6,
-    "name": "Lifetime Plan",
-    "description": "One-time payment for lifetime access.",
-    "price": 199,
-    "period": "one-time",
+    "name": "All-in-One Suite",
+    "description": "Get access to all premium digital tools in one package.",
+    "price": 150,
+    "period": "yearly",
     "tag": "exclusive",
     "tagType": "exclusive",
     "features": [
-      "All features unlocked",
-      "Lifetime updates",
-      "Priority support"
+      "Access to all tools",
+      "Priority support",
+      "Advanced integrations",
+      "Team collaboration"
     ],
-    "icon": "FaInfinity"
+    "icon": "FaCrown"
   }
 ]

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import Products from './Products';
 import Carts from './Carts';
 
-const Msec = () => {
+const Msec = ({cardPromise}) => {
+    const data = use(cardPromise);
+    
     const  [colorEf , setColorEf]  =  useState("products")
     console.log(colorEf);
     return (
@@ -15,7 +17,7 @@ const Msec = () => {
                     <button onClick={()   =>  setColorEf("cart")}  className={` ${colorEf == "cart" ? "bg-yellow-300" : "" }  rounded-none rounded-r-[15px] p-[5px]`}>Cart(0)</button>
                 </div>
                 {
-                    colorEf === "products"  ?  <Products></Products> : <Carts></Carts>
+                    colorEf === "products"  ?  <Products data={data}></Products> : <Carts></Carts>
                 }
                 
             </div>
