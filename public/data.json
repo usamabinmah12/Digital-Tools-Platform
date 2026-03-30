@@ -13,7 +13,7 @@
       "AI content suggestions",
       "Export to PDF"
     ],
-    "icon": "FaFileAlt"
+    "icon": "https://i.ibb.co.com/5gKPNd00/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Custom branding tools",
       "Drag & drop editor"
     ],
-    "icon": "FaPaintBrush"
+    "icon": "https://i.ibb.co.com/wFCxpJk2/operation.png"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "Backlink tracking",
       "Competitor insights"
     ],
-    "icon": "FaSearch"
+    "icon": "https://i.ibb.co.com/qYb38WPj/portfolio.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
       "Multi-platform support",
       "Content calendar"
     ],
-    "icon": "FaShareAlt"
+    "icon": "https://i.ibb.co.com/TB6cRnjN/social-media.png"
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
       "File sharing",
       "Backup & restore"
     ],
-    "icon": "FaCloud"
+    "icon": "https://i.ibb.co.com/0jqLv3Qw/design-tool.png"
   },
   {
     "id": 6,
@@ -93,6 +93,6 @@
       "Advanced integrations",
       "Team collaboration"
     ],
-    "icon": "FaCrown"
+    "icon": "https://i.ibb.co.com/qYb38WPj/portfolio.png"
   }
 ]

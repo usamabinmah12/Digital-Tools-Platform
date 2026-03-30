@@ -16,7 +16,10 @@ const Msec = ({cardPromise, carts , setCarts}) => {
                     <button onClick={()   =>  setColorEf("products")}  className={` ${colorEf == "products" ? "bg-yellow-300" : "" }  rounded-none rounded-l-[15px] p-[5px]`}>Products</button>
                     <button onClick={()   =>  setColorEf("cart")}  className={` ${colorEf == "cart" ? "bg-yellow-300" : "" }  rounded-none rounded-r-[15px] p-[5px]`}>Cart({carts.length})</button>
                 </div>
-                {
+                
+                
+            </div>
+            {
                     colorEf === "products"  ?  <Products data={data}   
                         carts  = {carts}
                         setCarts  =  {setCarts}
@@ -24,9 +27,7 @@ const Msec = ({cardPromise, carts , setCarts}) => {
                         carts  = {carts}
                         setCarts  =  {setCarts}
                     ></Carts>
-                }
-                
-            </div>
+             }
         </div>
     );
 };
