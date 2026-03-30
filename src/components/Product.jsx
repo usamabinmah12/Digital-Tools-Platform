@@ -15,8 +15,8 @@ const Product = ({product , carts  , setCarts  ,total   , setTotal}) => {
     }
     const [btnCl , setBtnCl] = useState(true);
     return (
-        <div className=''>
-            <div className="card w-96 bg-base-100 shadow-sm">
+        <div className='p-6 bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300'>
+            <div className="card  bg-base-100 shadow-sm">
         <div className="card-body">
           <div className="flex justify-between">
               <img src={product.icon} alt="" />
@@ -33,7 +33,7 @@ const Product = ({product , carts  , setCarts  ,total   , setTotal}) => {
         }
           <div className="mt-6">
             <button onClick={()  => {addcart(product); setBtnCl(false)}}  className="btn btn-primary btn-block">{
-                btnCl ?    "Buy Now" : "You  Buyed  this  Product"
+                btnCl ?    "Buy Now" : "Added  to cart"
               }</button>
           </div>
         </div>

@@ -14,12 +14,12 @@ const Banner = () => {
               <h3>New: AI-Powered Tools Available</h3>
             </div>
             
-            <h1 className="text-5xl font-bold">Supercharge Your Digital Workflow</h1>
+            <h1 className="text-5xl font-bold">Supercharge Your  <br /> <span className="text-blue-400"> Digital Workflow</span></h1>
             <p className="py-6">
               Access premium AI tools, design assets, templates, and productivity
                 software—all in one place. Start creating faster today.
 
-               <br /> Explore Products
+               <br />  <span className="font-medium">Explore Products</span> 
             </p>
             <div className="flex">
                 <button className="bg-blue-700 text-white  p-2 rounded-[15px] mx-3">Explore Products</button>

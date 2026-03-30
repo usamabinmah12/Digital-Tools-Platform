@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = ({carts  , setCarts, total ,  setTotal}) => {
   return (
-    <div  className="container mx-auto">
-      <div className="  shadow-sm flex justify-between items-center">
+    <div className="  fixed top-0 inset-x-0 bg-white z-50 shadow-md ">
+      <div className=" container mx-auto flex justify-between items-center p-4 shadow-sm flex justify-between items-center">
         <div className="">
           <a className="flex justify-between btn btn-ghost text-xl text-[#9514FA]">DigiTools</a>
         </div>

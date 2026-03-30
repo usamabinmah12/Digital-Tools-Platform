@@ -5,6 +5,7 @@ import Banner from './components/Banner'
  import Stat from './components/Stat'
 import Msec from './components/Msec'
 import { Suspense, useState } from 'react'
+import Starter from './components/Starter'
 const fetchCard = async() => {
   const res = await fetch("/data.json");
   return  res.json();
@@ -33,6 +34,7 @@ function App() {
         
         ></Msec>
       </Suspense>
+      <Starter></Starter>
       <ToastContainer></ToastContainer>
         
     </>
