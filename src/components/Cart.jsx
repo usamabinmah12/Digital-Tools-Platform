@@ -14,8 +14,8 @@ const Cart = ({ cart   , carts,   setCarts  ,  total ,setTotal }) => {
       <div className="flex  justify-between   bg-amber-50  p-9 rounded-3xl">
         <div className=" flex gap-6 my-6 ">
           <img src={cart.icon} alt="" />
-          <div className="">
-            <h2 className="card-title">{cart.name}</h2>
+          <div className="w-96">
+            <h2 className="card-title w-full">{cart.name}</h2>
             <p>${cart.price}</p>
             
           </div>

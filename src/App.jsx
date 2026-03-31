@@ -7,6 +7,7 @@ import Msec from './components/Msec'
 import { Suspense, useState } from 'react'
 import Starter from './components/Starter'
 import Sample from './components/Sample'
+import Footer from './components/Footer'
 const fetchCard = async() => {
   const res = await fetch("/data.json");
   return  res.json();
@@ -37,6 +38,7 @@ function App() {
       </Suspense>
       <Starter></Starter>
       <Sample></Sample>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
         
     </>

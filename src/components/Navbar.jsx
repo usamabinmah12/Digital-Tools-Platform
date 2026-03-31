@@ -8,13 +8,13 @@ const Navbar = ({carts  , setCarts, total ,  setTotal}) => {
           <a className="flex justify-between btn btn-ghost text-xl text-[#9514FA]">DigiTools</a>
         </div>
         <div className="">
-            <ul className="flex  justify-center gap-3">
-                <li>Products</li>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
-                <li>FAQ</li>
-            </ul>
+            <div className="flex  justify-center gap-3">
+                <button className="btn">Products</button>
+                <button  className="btn">Features</button>
+                <button className="btn">Pricing</button>
+                <button className="btn">Testimonials</button>
+                <button   className="btn">FAQ</button>
+            </div>
           </div>
         <div className="flex justify-end items-center">
           <div className="dropdown dropdown-end">

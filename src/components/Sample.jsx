@@ -10,7 +10,7 @@ const Sample = () => {
         <p>
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
-        <div className="grid grid-cols-3 gap-12   my-12">
+        <div className="grid   sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12   my-12">
           <div className="card w-96 bg-base-100 shadow-sm p-6 bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300">
             <div className="card-body">
               

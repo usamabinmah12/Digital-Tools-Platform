@@ -4,7 +4,7 @@ import Product from "./Product";
 const Products = ({data , carts  ,   setCarts  , total , setTotal}) => {
 
   return (
-    <div  className="container mx-auto grid  grid-cols-3 gap-[100px]">
+    <div  className="container mx-auto grid   sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[100px]">
         {
             data.map(product =>  <Product product={product}
             carts  = {carts}
